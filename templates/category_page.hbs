@@ -1,0 +1,56 @@
+<section class="hero">
+  <div class="hero-inner">
+    {{search submit=false scoped=true instant=settings.instant_search class='search search-full'}}
+  </div>
+</section>
+
+<div class="container category-page">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+  </nav>
+
+  <div class="category-container">
+    <div id="template" class="category-content">
+      <header class="page-header">
+        <div>
+          <h1>{{category.name}}</h1>
+          {{#if category.description}}
+            <p class="page-header-description">{{category.description}}</p>
+          {{/if}}
+        </div>
+        <v-icon :id="{{category.id}}"></v-icon>
+      </header>
+
+      {{#if sections}}
+					<ul class="article-list">
+              {{#each sections}}
+                    <li class="article-list-item">
+                      <a href="{{url}}" class="article-list-link">
+                        {{name}}
+                      </a>
+                    </li>
+              {{/each}}
+          </ul>
+      {{/if}}
+    </div>
+
+        <div id="template-cta">
+          <div v-if="isHomePage || isCategoryPage || isArticlePage" class="cta-inner" :class="{'home-cta': isHomePage, 'category-cta': isCategoryPage, 'article-cta': isArticlePage }">
+            <div class="cta-content">
+              <h2 class="cta-content-title">Still need help?</h2>
+              <p class="cta-content-description">Get in contact with our friendly support team</p>
+            </div>
+            <div class="cta-button">
+              <a :href='"{{page_path 'new_request'}}" + (categoryIdentifier ? "?ticket_form_id=" + categoryIdentifier : "")' class="red-btn">Contact Us</a>
+            </div>
+          </div>
+         </div>
+
+  </div>
+</div>
+
+<script>
+  HC.SETTINGS.isCategoryPage = true;
+  HC.templates.category.$mount("#template");
+  HC.templates.cta.$mount("#template-cta");
+</script>

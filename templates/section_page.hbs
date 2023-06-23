@@ -1,0 +1,82 @@
+<section class="hero">
+  <div class="hero-inner">
+    {{search submit=false scoped=true instant=settings.instant_search class='search search-full'}}
+  </div>
+</section>
+
+<div class="container">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+  </nav>
+
+  <div class="section-container">
+    <section id="template" class="section-content">
+      <header class="page-header">
+        <div>
+          <h1>{{section.name}}</h1>
+          {{#if section.description}}
+            <p class="page-header-description">{{section.description}}</p>
+          {{/if}}
+        </div>
+        <v-icon></v-icon>
+      </header>
+
+      {{#if section.sections}}
+        <div class="subsections section-wrapper multihierarchy">
+          <span class="section-title">More sections</span>
+          <ul class="article-list">
+            {{#each section.sections}}
+              <li class="article-list-item">
+                <a href="{{url}}" class="article-list-link">{{name}}</a>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/if}}
+      
+			{{#if section.articles}}
+      <div class="section-wrapper {{#if section.sections}}multihierarchy{{/if}}">
+          {{#if section.sections }}<span class="section-title">Articles</span>{{/if}}
+        
+          <ul class="article-list">
+            {{#each section.articles}}
+              <li class="article-list-item {{#if promoted}} article-promoted{{/if}}">
+                <a href="{{url}}" class="article-list-link">
+                  {{#if promoted}}
+                    <span data-title="{{t 'promoted'}}" class="icon-star"></span>
+                  {{/if}}
+                  {{title}}
+                  {{#if internal}}
+                    <span class="icon-lock" title="{{t 'internal'}}"></span>
+                  {{/if}}
+                </a>
+              </li>
+            {{/each}}
+          </ul>
+ 
+      </div>
+             {{/if}}
+
+      {{pagination}}
+
+    </section>
+
+         <div id="template-cta">
+          <div v-if="isHomePage || isCategoryPage || isArticlePage" class="cta-inner" :class="{'home-cta': isHomePage, 'category-cta': isCategoryPage, 'article-cta': isArticlePage }">
+            <div class="cta-content">
+              <h2 class="cta-content-title">Still need help?</h2>
+              <p class="cta-content-description">Get in contact with our friendly support team</p>
+            </div>
+            <div class="cta-button">
+              <a :href='"{{page_path 'new_request'}}" + (categoryIdentifier ? "?ticket_form_id=" + categoryIdentifier : "")' class="red-btn">Contact Us</a>
+            </div>
+          </div>
+         </div>
+  </div>
+</div>
+
+<script>
+  HC.SETTINGS.isCategoryPage = true;
+  HC.templates.section.$mount("#template");
+  HC.templates.cta.$mount("#template-cta");
+</script>

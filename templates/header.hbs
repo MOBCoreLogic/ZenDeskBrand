@@ -1,0 +1,34 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBWZ7QK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="header-wrapper">
+	<header class="header">
+		<div class="logo">
+			{{#link 'help_center'}}
+				<img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+			{{/link}}
+		</div>
+
+
+		<div class="header-nav">
+			{{#link 'new_request' class="site-link contact"}}Contact Us{{/link}}
+			<a href="https://www.corelogic.com.au/" class="site-link website">Visit CoreLogic Corporate Website</a>
+
+			<div :class="['mobile-header', showMenu && 'open']" @click="showMenu = !showMenu">
+				<span class="fa fa-bars open-nav"></span>
+				<span class="fa fa-times close-nav"></span>      
+			</div>
+		</div>
+
+		<div class="mobile-menu" v-show="showMenu">
+			{{#link 'new_request' class="mobile-menu-link"}}Contact Us{{/link}}
+			<a href="https://www.corelogic.com.au/" class="mobile-menu-link">CoreLogic Corporate Website</a>
+		</div>
+
+	</header>
+</div>
+
+
+<script>HC.templates.header.$mount(".header");</script>

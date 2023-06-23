@@ -1,0 +1,20 @@
+<button id="back-to-top" v-if="visible" class="scroll-to-top" @click="scrollToTop">Back to top</button>
+<div class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <a href="{{page_path 'help_center'}}"><img alt="RP Data" class="sml-logo" data-entity-type="" data-entity-uuid="" src="{{asset 'footer-logo-white.svg'}}"></a>
+    </div>
+    <div class="footer-content">
+      <div class="first-footer">
+        <span>&copy; RP Data Pty Ltd t/a CoreLogic Asia Pacific (ABN 67 087 759 171) 2022. All rights reserved.</span>
+      </div>
+      <div class="second-footer">
+        <a href="https://www.corelogic.com.au/legals/privacy-policy">Privacy Policy</a> | <a href="https://www.corelogic.com.au/legals/terms-conditions">General Terms &amp; Conditions</a> | <a href="https://www.corelogic.com.au/legals/website-terms">Website Terms of Use</a> | <a href="http://www.propertydatacodeofconduct.com.au/ttsvr/n/qvas-195" target="_blank">Data Code of Conduct</a> | <a href="https://www.corelogic.com.au/legals/copyright-disclaimer">Disclaimers</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  HC.templates.backToTop.$mount("#back-to-top");
+</script>

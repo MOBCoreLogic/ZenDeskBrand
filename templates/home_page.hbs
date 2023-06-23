@@ -1,0 +1,74 @@
+<h1 class="visibility-hidden">{{ help_center.name }}</h1>
+<div class="homepage-style-wrapper">
+  <section class="section hero">
+    <div class="hero-inner">
+      {{search submit=false instant=settings.instant_search class='search search-full'}}
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="section knowledge-base">
+      <h2>{{settings.homepage_header}}</h2>
+      <div class="knowledge-base-wrapper">
+        <section class="categories blocks">
+          <div class="category-groups"></div>
+          <ul id="template" class="blocks-list">
+            {{#each categories}}
+                <li class="blocks-item" data-id="{{id}}">
+                  <a href='{{url}}' class="blocks-item-link">
+                    <v-icon :id="{{id}}"></v-icon>
+                    <span class="blocks-item-title">{{name}}</span>
+                    <span class="blocks-item-description">{{excerpt description}}</span>
+                  </a>
+                </li>
+            {{/each}}
+          </ul>
+          {{pagination}}
+
+          <div id="template-cta">
+            <div v-if="isHomePage || isCategoryPage || isArticlePage" class="cta-inner" :class="{'home-cta': isHomePage, 'category-cta': isCategoryPage, 'article-cta': isArticlePage }">
+              <div class="cta-content">
+                <h2 class="cta-content-title">Still need help?</h2>
+                <p class="cta-content-description">Get in contact with our friendly support team</p>
+              </div>
+              <div class="cta-button">
+                <a :href='"{{page_path 'new_request'}}" + (categoryIdentifier ? "?ticket_form_id=" + categoryIdentifier : "")' class="red-btn">Contact Us</a>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+        
+        {{#if promoted_articles}}
+        <section class="promoted-articles">
+          <div class="section-wrapper">
+            <div class="section-title">{{t 'promoted_articles'}}</div>
+            <ul class="article-list">
+              {{#each promoted_articles}}
+                <li class="article-list-item">
+                    <a href="{{url}}" class="article-list-link">
+                      {{title}}
+
+                      {{#if internal}}
+                        <span class="icon-lock" title="{{t 'internal'}}"></span>
+                      {{/if}}
+                    </a>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        </section>
+      {{/if}}
+        
+        
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+  HC.SETTINGS.isHomePage = true;
+  HC.templates.home.$mount("#template");
+  HC.templates.cta.$mount("#template-cta");
+</script>

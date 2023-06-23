@@ -1,0 +1,339 @@
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="robots" content="noindex" />
+<meta name="google-site-verification" content="o1oJ8nUurUsespqSco9_wab2ANQTMmlP2cJwxkFn2eI" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+<!-- Google Tag Manager | Zendesk -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KBWZ7QK');</script>
+<!-- End Google Tag Manager | Zendesk -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KBHH7LD');</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+window.zESettings = {
+   "webWidget": {
+      "chat": {
+         "departments": {
+            "enabled": [2147691811],
+  					"select": 2147691811
+         }
+      }
+   }
+}
+
+// Hide chat by default
+$(document).ready(function() {
+  zE('webWidget', 'hide');
+
+  // Hide the launcher on close
+  zE('webWidget:on', 'close', function() {
+    zE('webWidget', 'hide');
+  });
+});
+</script>
+
+
+
+{{!-- CUSTOM HELPCENTER SETTINGS --}}
+<script>
+var HC = window.HC || {};
+
+HC.SETTINGS = {
+  feedback_form_id: "{{settings.feedback_form_id}}",
+  feedback_field_id_title: "{{settings.feedback_field_id_title}}",
+  feedback_field_id_url: "{{settings.feedback_field_id_url}}",
+  feedback_field_id_reason: "{{settings.feedback_field_id_reason}}",
+
+  categories: [
+    {
+      id: "{{settings.category_id_1}}",
+      icon: "{{settings.category_icon_1}}",
+    },
+    {
+      id: "{{settings.category_id_2}}",
+      icon: "{{settings.category_icon_2}}",
+    },
+    {
+      id: "{{settings.category_id_3}}",
+      icon: "{{settings.category_icon_3}}",
+    },
+    {
+      id: "{{settings.category_id_4}}",
+      icon: "{{settings.category_icon_4}}",
+    },
+    {
+      id: "{{settings.category_id_5}}",
+      icon: "{{settings.category_icon_5}}",
+    },
+    {
+      id: "{{settings.category_id_6}}",
+      icon: "{{settings.category_icon_6}}",
+    },
+    {
+      id: "{{settings.category_id_7}}",
+      icon: "{{settings.category_icon_7}}",
+    },
+    {
+      id: "{{settings.category_id_8}}",
+      icon: "{{settings.category_icon_8}}",
+    },
+    {
+      id: "{{settings.category_id_9}}",
+      icon: "{{settings.category_icon_9}}",
+    },
+    {
+      id: "{{settings.category_id_10}}",
+      icon: "{{settings.category_icon_10}}",
+    },
+    {
+      id: "{{settings.category_id_11}}",
+      icon: "{{settings.category_icon_11}}",
+    },
+    {
+      id: "{{settings.category_id_12}}",
+      icon: "{{settings.category_icon_12}}",
+    },
+    {
+      id: "{{settings.category_id_13}}",
+      icon: "{{settings.category_icon_13}}",
+    },
+    {
+      id: "{{settings.category_id_14}}",
+      icon: "{{settings.category_icon_14}}",
+    },
+    {
+      id: "{{settings.category_id_15}}",
+      icon: "{{settings.category_icon_15}}",
+    },
+    {
+      id: "{{settings.category_id_16}}",
+      icon: "{{settings.category_icon_16}}",
+    },
+    {
+      id: "{{settings.category_id_17}}",
+      icon: "{{settings.category_icon_17}}",
+    },
+    {
+      id: "{{settings.category_id_18}}",
+      icon: "{{settings.category_icon_18}}",
+    },
+    {
+      id: "{{settings.category_id_19}}",
+      icon: "{{settings.category_icon_19}}",
+    },
+    {
+      id: "{{settings.category_id_20}}",
+      icon: "{{settings.category_icon_20}}",
+    },
+    {
+      id: "{{settings.category_id_21}}",
+      icon: "{{settings.category_icon_21}}",
+    },
+    {
+      id: "{{settings.category_id_22}}",
+      icon: "{{settings.category_icon_22}}",
+    },
+    {
+      id: "{{settings.category_id_23}}",
+      icon: "{{settings.category_icon_23}}",
+    },
+    {
+      id: "{{settings.category_id_24}}",
+      icon: "{{settings.category_icon_24}}",
+    },
+    {
+      id: "{{settings.category_id_25}}",
+      icon: "{{settings.category_icon_25}}",
+    },
+    {
+      id: "{{settings.category_id_26}}",
+      icon: "{{settings.category_icon_26}}",
+    },
+    {
+      id: "{{settings.category_id_27}}",
+      icon: "{{settings.category_icon_27}}",
+    },
+    {
+      id: "{{settings.category_id_28}}",
+      icon: "{{settings.category_icon_28}}",
+    },
+    {
+      id: "{{settings.category_id_29}}",
+      icon: "{{settings.category_icon_29}}",
+    },
+    {
+      id: "{{settings.category_id_30}}",
+      icon: "{{settings.category_icon_30}}",
+    }
+  ],
+
+  category_groups: {
+   "{{settings.category_group_name_1}}": determineCategoryGroupMembers(1),
+   "{{settings.category_group_name_2}}": determineCategoryGroupMembers(2),
+   "{{settings.category_group_name_3}}": determineCategoryGroupMembers(3),
+   "{{settings.category_group_name_4}}": determineCategoryGroupMembers(4),
+   "{{settings.category_group_name_5}}": determineCategoryGroupMembers(5)
+  },
+
+  forms: [
+    {
+      id: "{{settings.form_id_1}}",
+      icon: "{{settings.form_icon_1}}",
+      description: "{{settings.form_desc_1}}",
+    },
+    {
+      id: "{{settings.form_id_2}}",
+      icon: "{{settings.form_icon_2}}",
+      description: "{{settings.form_desc_2}}",
+    },
+    {
+      id: "{{settings.form_id_3}}",
+      icon: "{{settings.form_icon_3}}",
+      description: "{{settings.form_desc_3}}",
+    },
+    {
+      id: "{{settings.form_id_4}}",
+      icon: "{{settings.form_icon_4}}",
+      description: "{{settings.form_desc_4}}",
+    },
+    {
+      id: "{{settings.form_id_5}}",
+      icon: "{{settings.form_icon_5}}",
+      description: "{{settings.form_desc_5}}",
+    },
+    {
+      id: "{{settings.form_id_6}}",
+      icon: "{{settings.form_icon_6}}",
+      description: "{{settings.form_desc_6}}",
+    },
+    {
+      id: "{{settings.form_id_7}}",
+      icon: "{{settings.form_icon_7}}",
+      description: "{{settings.form_desc_7}}",
+    },
+    {
+      id: "{{settings.form_id_8}}",
+      icon: "{{settings.form_icon_8}}",
+      description: "{{settings.form_desc_8}}",
+    },
+    {
+      id: "{{settings.form_id_9}}",
+      icon: "{{settings.form_icon_9}}",
+      description: "{{settings.form_desc_9}}",
+    },
+    {
+      id: "{{settings.form_id_10}}",
+      icon: "{{settings.form_icon_10}}",
+      description: "{{settings.form_desc_10}}",
+    },
+    {
+      id: "{{settings.form_id_11}}",
+      icon: "{{settings.form_icon_11}}",
+      description: "{{settings.form_desc_11}}",
+    },
+    {
+      id: "{{settings.form_id_12}}",
+      icon: "{{settings.form_icon_12}}",
+      description: "{{settings.form_desc_12}}",
+    },
+    {
+      id: "{{settings.form_id_13}}",
+      icon: "{{settings.form_icon_13}}",
+      description: "{{settings.form_desc_13}}",
+    },
+    {
+      id: "{{settings.form_id_14}}",
+      icon: "{{settings.form_icon_14}}",
+      description: "{{settings.form_desc_14}}",
+    },
+    {
+      id: "{{settings.form_id_15}}",
+      icon: "{{settings.form_icon_15}}",
+      description: "{{settings.form_desc_15}}",
+    }
+  ],
+
+  category_mapping: determineCategoryFormMapping(),
+
+  feedback_options: [
+    {
+      label: "{{settings.feedback_option_label_1}}",
+      tag: "{{settings.feedback_option_tag_1}}",
+    },
+    {
+      label: "{{settings.feedback_option_label_2}}",
+      tag: "{{settings.feedback_option_tag_2}}",
+    },
+    {
+      label: "{{settings.feedback_option_label_3}}",
+      tag: "{{settings.feedback_option_tag_3}}",
+    },
+    {
+      label: "{{settings.feedback_option_label_4}}",
+      tag: "{{settings.feedback_option_tag_4}}",
+    },
+  ]
+};
+
+function determineCategoryFormMapping() {
+  let setting = "{{settings.category_form_mapping}}"
+  if (setting) {
+    try {
+      return JSON.parse(setting.replaceAll('&quot;', '\"'))
+    } catch (e) {
+      console.error('category_form_mapping not propery formatted - form mapping will not operate as expected')
+      return {}
+    }
+  } else {
+    return {}
+  }
+}
+
+function determineCategoryGroupMembers(index) {
+  let setting
+  switch (index) {
+    case 1:
+      setting = '{{settings.category_group_members_1}}'
+      break;
+    case 2:
+      setting = '{{settings.category_group_members_2}}'
+      break;
+    case 3:
+      setting = '{{settings.category_group_members_3}}'
+      break;
+    case 4:
+      setting = '{{settings.category_group_members_4}}'
+      break;
+    case 5:
+      setting = '{{settings.category_group_members_5}}'
+      break;
+  }
+  if (setting && setting.trim()) {
+    try {
+      return setting.split(',').map(member => member.trim())
+    } catch (e) {
+      console.error(`issue with category_group_members_${index} - category group mapping failed`)
+      return []
+    }
+  } else {
+    return {}
+  }
+}
+
+
+
+</script>

@@ -1,0 +1,157 @@
+<section class="hero">
+  <div class="hero-inner">
+    {{search submit=false scoped=true instant=settings.instant_search class='search search-full'}}
+  </div>
+</section>
+
+<div class="container">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+  </nav>
+
+
+  <div class="article-container" id="article-container">
+
+    <article class="article" id="article">
+      <header class="article-header">
+        <h1 title="{{article.title}}" class="article-title">
+          {{article.title}}
+          {{#if article.internal}}
+            <span class="icon-lock" title="{{t 'internal'}}"></span>
+          {{/if}}
+        </h1>
+
+        <div class="article-author">
+          <div class="article-meta">
+            <ul class="meta-group">
+              {{#is article.created_at article.edited_at}}
+                <li class="meta-data">{{date article.created_at timeago=true}}</li>
+              {{else}}
+                <li class="meta-data">{{t 'updated'}} {{date article.edited_at timeago=true}}</li>
+              {{/is}}
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="article-info">
+        <div class="article-content">
+          <div class="article-body">{{article.body}}</div>
+
+          <div class="article-attachments">
+            <ul class="attachments">
+              {{#each attachments}}
+                <li class="attachment-item">
+                  <a href="{{url}}" target="_blank">{{name}}</a>
+                  <div class="attachment-meta meta-group">
+                    <span class="attachment-meta-item meta-data">{{size}}</span>
+                    <a href="{{url}}" target="_blank" class="attachment-meta-item meta-data">Download</a>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        {{#with article}}
+          <div class="article-votes">
+            <div class="article-votes-main">
+              <span class="article-votes-question">{{t 'was_this_article_helpful'}}</span>
+              <div class="article-votes-controls" role='radiogroup'>
+                {{vote 'up' role='radio' class='button article-vote article-vote-up'}}
+                {{vote 'down' role='radio' class='button article-vote article-vote-down'}}
+              </div>
+            </div>
+
+            <div v-if="showFeedbackForm" class="article-feedback">
+              <div v-if="feedbackSubmitted" class="article-feedback-thank">
+                <span>Thank you for your feedback!</span>
+              </div>
+              <div v-else class="article-feedback-form">
+                <span>Sorry about that! We'd love to know why you didn't find it helpful</span>
+                <ul class="article-feedback-poll">
+                    <li v-for="option in feedbackOptions">
+                      <input type="radio" :id="option.tag" name="articleFeedback" :value="option.tag" v-model="feedbackSelectedOption" />
+                      <label :for="option.tag">{[{option.label}]}</label>
+                    </li>
+                </ul>
+                <textarea v-model="feedbackDetails" class="article-feedback-details" placeholder="Is there any other detail you would like to add?"></textarea>
+                <div class="article-feedback-footer">
+                  <button class="button" @click="submitFeedback">Submit Feedback</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        {{/with}}
+
+        {{!-- <div class="article-more-questions">
+          Have more questions?
+          
+          <div class="article-more-questions-button">
+<!--             <a href="{{page_path 'new_request'}}" class="red-btn">Contact Us</a> -->
+            <a :href='"{{page_path 'new_request'}}" + (categoryIdentifier ? "?ticket_form_id=" + categoryIdentifier : "")' class="red-btn">Get in Touch</a>
+          </div>
+        </div> --}}
+      </footer>
+
+      {{!-- <div class="article-relatives">
+        {{#if settings.show_recently_viewed_articles}}
+          {{recent_articles}}
+        {{/if}}
+        {{#if settings.show_related_articles}}
+          {{related_articles}}
+        {{/if}}
+      </div> --}}
+    </article>
+
+    <aside class="article-sidebar" aria-labelledby="section-articles-title">
+      <div class="section-wrapper">
+        <span id="section-articles-title" class="collapsible-sidebar-title sidenav-title section-title">
+          <span class="section-indicator">Section Name</span>
+          <span class="articles-in-section">{{t 'articles_in_section'}}</span>
+        </span>
+        <ul>
+          {{#each section.articles}}
+            <li class="article-list-item">
+              <a href="{{url}}" class="sidenav-item {{#is id ../article.id}}current-article{{/is}}">{{title}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+    {{#if section.more_articles}}
+      <a href="{{section.url}}" class="see-all-articles button">{{t 'see_more'}}</a>
+    {{/if}}
+
+        <div id="template-cta">
+          <div v-if="isHomePage || isCategoryPage || isArticlePage" class="cta-inner" :class="{'home-cta': isHomePage, 'category-cta': isCategoryPage, 'article-cta': isArticlePage }">
+            <div class="cta-content">
+              <h2 class="cta-content-title">Still need help?</h2>
+              <p class="cta-content-description">Get in contact with our friendly support team</p>
+            </div>
+            <div class="cta-button">
+              <a :href='"{{page_path 'new_request'}}" + (categoryIdentifier ? "?ticket_form_id=" + categoryIdentifier : "")' class="red-btn">Contact Us</a>
+            </div>
+          </div>
+         </div>
+    </aside>
+
+
+  </div>
+</div>
+
+
+<script>
+  HC.SETTINGS.isArticlePage = true;
+  HC.templates.article.$mount("#article");
+  HC.templates.cta.$mount("#template-cta");
+
+  var sectionLink = $(".breadcrumbs li:nth-child(3) a");
+  var sectionName = sectionLink.length ? sectionLink.text() : null;
+  if (sectionName) {
+    $('.section-indicator').text(sectionName)
+  }
+  </script>

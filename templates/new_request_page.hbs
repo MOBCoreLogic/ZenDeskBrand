@@ -1,0 +1,124 @@
+<div class="homepage-style-wrapper">
+<section class="hero">
+  <div class="hero-inner">
+    {{search submit=false instant=settings.instant_search class='search search-full'}}
+  </div>
+</section>
+
+
+
+<div id="template">
+<div class="container">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+  </nav>
+
+  <h1>
+    {{#if follow_up}}
+      <span class="follow-up-hint">
+        {{follow_up}}
+      </span>
+    {{/if}}
+  </h1>
+
+    <div v-if="!isTicketForm" class="help-forms">
+        <h1>{{t 'submit_a_request'}}</h1>
+        <section class="categories blocks">
+          <ul class="blocks-list">
+            <li v-for="form in forms" class="blocks-item" :data-id="form.id">
+              <a :href='form.url' class="blocks-item-link">
+                <v-form-icon :id="form.id"></v-form-icon>
+                <span class="blocks-item-title">{[{form.title}]}</span>
+                <span class="blocks-item-description">{[{getFormDescription(form.id)}]}</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+    </div>
+	</div>
+</div>
+
+<div class="container form-container" style="display:none;">
+<!--   <h1>
+    {{t 'submit_a_request'}}
+    {{#if follow_up}}
+      <span class="follow-up-hint">
+        {{follow_up}}
+      </span>
+    {{/if}}
+  </h1> -->
+  
+  <div id="template-header">
+  <div v-if="isTicketForm">
+    <div class="form-header">
+      <div class="form-header-icon">
+        <img src="{{asset 'contact_email.svg'}}" />
+      </div>
+      <h2 class="form-header-title">Send email</h2>
+    </div>
+
+
+    {{#if follow_up}}
+      <span class="follow-up-hint">
+        {{follow_up}}
+      </span>
+    {{/if}}
+  </div>
+  <div v-else>
+    <h2>
+      Get in touch
+
+      {{#if follow_up}}
+        <span class="follow-up-hint">
+          {{follow_up}}
+        </span>
+      {{/if}}
+    </h2>
+  </div>
+</div>
+  
+	<div class="form-wrapper">
+  <div class="form">
+    {{request_form}}
+  </div>
+  
+    <div id="template-sidebar" class="form-sidebar" style="display:none;">
+      <div class="form-sidebar-box">
+        <div class="form-sidebar-header">
+          <div class="form-sidebar-icon">
+            <img src="{{asset 'contact_talk.svg'}}" />
+          </div>
+          <h2 class="form-sidebar-title">
+            {{settings.contact_phone_title}}
+          </h2>
+        </div>
+        <p class="form-sidebar-content">
+          {{settings.contact_phone_description}}
+        </p>
+      </div>
+
+      <div :class="['form-sidebar-box', 'form-sidebar-chat', !isChatAvailable && 'disabled']" @click="toggleChat">
+        <div class="form-sidebar-header">
+          <div class="form-sidebar-icon">
+            <img src="{{asset 'contact_chat.svg'}}" />
+          </div>
+          <h2 class="form-sidebar-title">
+            {{settings.contact_chat_title}}
+          </h2>
+        </div>
+        <p class="form-sidebar-content">
+            {{settings.contact_chat_description}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>HC.templates.new_request_header.$mount("#template-header");</script>
+<script>HC.templates.new_request.$mount("#template");</script>
+<script>HC.templates.new_request_sidebar.$mount("#template-sidebar");</script>
+<script>
+document.querySelector('body').classList.add('new-request-page');
+document.querySelector('footer input[type="submit"]').classList.add('ga-submit-button');
+</script>
