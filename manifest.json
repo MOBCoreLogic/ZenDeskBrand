@@ -1,0 +1,1198 @@
+{
+  "name": "CoreLogic v2",
+  "author": "Zendesk",
+  "version": "2.0.1",
+  "api_version": 1,
+  "default_locale": "en-us",
+  "settings": [
+    {
+      "label": "Category Icons",
+      "variables": [
+        {
+          "identifier": "category_id_1",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #1 –––––––––––––",
+          "value": "360000123576"
+        },
+        {
+          "identifier": "category_icon_1",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_2",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #2 –––––––––––––",
+          "value": "360000123656"
+        },
+        {
+          "identifier": "category_icon_2",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_3",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #3 –––––––––––––",
+          "value": "360000125735"
+        },
+        {
+          "identifier": "category_icon_3",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_4",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #4 –––––––––––––",
+          "value": "360000123536"
+        },
+        {
+          "identifier": "category_icon_4",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_5",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #5 –––––––––––––",
+          "value": "360000123556"
+        },
+        {
+          "identifier": "category_icon_5",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_6",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #6 –––––––––––––",
+          "value": "360000974535"
+        },
+        {
+          "identifier": "category_icon_6",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_7",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #7 –––––––––––––",
+          "value": "360000679156"
+        },
+        {
+          "identifier": "category_icon_7",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_8",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #8 –––––––––––––",
+          "value": "360000125715"
+        },
+        {
+          "identifier": "category_icon_8",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_9",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #9 –––––––––––––",
+          "value": "360000123696"
+        },
+        {
+          "identifier": "category_icon_9",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_10",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #10 –––––––––––––",
+          "value": "360000123516"
+        },
+        {
+          "identifier": "category_icon_10",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_11",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #11 –––––––––––––",
+          "value": "4409716036111"
+        },
+        {
+          "identifier": "category_icon_11",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_12",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #12 –––––––––––––",
+          "value": "360000125775"
+        },
+        {
+          "identifier": "category_icon_12",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_13",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #13 –––––––––––––",
+          "value": "360000680595"
+        },
+        {
+          "identifier": "category_icon_13",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_14",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #14 –––––––––––––",
+          "value": "360000651936"
+        },
+        {
+          "identifier": "category_icon_14",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_15",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #15 –––––––––––––",
+          "value": " 4403541772303"
+        },
+        {
+          "identifier": "category_icon_15",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_16",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #16 –––––––––––––",
+          "value": " 360000926455"
+        },
+        {
+          "identifier": "category_icon_16",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_17",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #17 –––––––––––––",
+          "value": " 360000123636"
+        },
+        {
+          "identifier": "category_icon_17",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_18",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #18 –––––––––––––",
+          "value": " 360000123596"
+        },
+        {
+          "identifier": "category_icon_18",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_19",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #19 –––––––––––––",
+          "value": " 4406546465551"
+        },
+        {
+          "identifier": "category_icon_19",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_20",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #20 –––––––––––––",
+          "value": " 4409338508175"
+        },
+        {
+          "identifier": "category_icon_20",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_21",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #21 –––––––––––––",
+          "value": "4419660417167"
+        },
+        {
+          "identifier": "category_icon_21",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_22",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #22 –––––––––––––",
+          "value": "4894558011919"
+        },
+        {
+          "identifier": "category_icon_22",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_23",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #23 –––––––––––––",
+          "value": "5497541614223"
+        },
+        {
+          "identifier": "category_icon_23",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_24",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #24 –––––––––––––",
+          "value": ""
+        },
+        {
+          "identifier": "category_icon_24",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_25",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #25 –––––––––––––",
+          "value": ""
+        },
+        {
+          "identifier": "category_icon_25",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_26",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #26 –––––––––––––",
+          "value": ""
+        },
+        {
+          "identifier": "category_icon_26",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_27",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #27 –––––––––––––",
+          "value": ""
+        },
+        {
+          "identifier": "category_icon_27",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_28",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #28 –––––––––––––",
+          "value": ""
+        },
+        {
+          "identifier": "category_icon_28",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_29",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #29 –––––––––––––",
+          "value": ""
+        },
+        {
+          "identifier": "category_icon_29",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "category_id_30",
+          "type": "text",
+          "description": "Category ID",
+          "label": "––––––––––––– Category #30 –––––––––––––",
+          "value": ""
+        },
+        {
+          "identifier": "category_icon_30",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "label": "Homepage Elements",
+      "variables": [
+        {
+          "identifier": "homepage_header",
+          "type": "text",
+          "description": "Heading to display on the homepage",
+          "label": "Homepage header",
+          "value": "Browse By Product"
+        }
+      ]
+    },
+    {
+      "label": "Category Groups",
+      "variables": [
+        {
+          "identifier": "category_group_name_1",
+          "type": "text",
+          "description": "Category group name",
+          "label": "–––––––– Category Group #1 ––––––––",
+          "value": "Product Guides"
+        },
+        {
+          "identifier": "category_group_members_1",
+          "type": "text",
+          "description": "Comma-separated category ids",
+          "label": " ",
+          "value": "360000679156, 360000974535, 360000123656, 360000123576, 360000680595, 360000651936, 360000123696, 5497541614223, 360000125715, 4409338508175"
+        },
+        {
+          "identifier": "category_group_name_2",
+          "type": "text",
+          "description": "Category group name",
+          "label": "–––––––– Category Group #2 ––––––––",
+          "value": "Account Administration"
+        },
+        {
+          "identifier": "category_group_members_2",
+          "type": "text",
+          "description": "Comma-separated category ids",
+          "label": " ",
+          "value": "4406546465551, 4409716036111"
+        },
+        {
+          "identifier": "category_group_name_3",
+          "type": "text",
+          "description": "Category group name",
+          "label": "–––––––– Category Group #3 ––––––––",
+          "value": "FAQs"
+        },
+        {
+          "identifier": "category_group_members_3",
+          "type": "text",
+          "description": "Comma-separated category ids",
+          "label": " ",
+          "value": "4419660417167, 360000123556"
+        },
+        {
+          "identifier": "category_group_name_4",
+          "type": "text",
+          "description": "Category group name",
+          "label": "–––––––– Category Group #4 ––––––––",
+          "value": "Technical Support"
+        },
+        {
+          "identifier": "category_group_members_4",
+          "type": "text",
+          "description": "Comma-separated category ids",
+          "label": " ",
+          "value": "4894558011919"
+        },
+        {
+          "identifier": "category_group_name_5",
+          "type": "text",
+          "description": "Category group name",
+          "label": "–––––––– Category Group #5 ––––––––",
+          "value": ""
+        },
+        {
+          "identifier": "category_group_members_5",
+          "type": "text",
+          "description": "Comma-separated category ids",
+          "label": " ",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "label": "Contact Us Text",
+      "variables": [
+        {
+          "identifier": "contact_email_title",
+          "type": "text",
+          "description": "Email option title in Contact Us page",
+          "label": "Email Title",
+          "value": "Email"
+        },
+        {
+          "identifier": "contact_email_description",
+          "type": "text",
+          "description": "Email option description in Contact Us page",
+          "label": "Email Description",
+          "value": "Email our Customer Care Team. Our working hours are 24/7 for email."
+        },
+        {
+          "identifier": "contact_chat_title",
+          "type": "text",
+          "description": "Chat option title in Contact Us page",
+          "label": "Chat Title",
+          "value": "Click to Chat"
+        },
+        {
+          "identifier": "contact_chat_description",
+          "type": "text",
+          "description": "Chat option description in Contact Us page",
+          "label": "Chat Description",
+          "value": "Chat with our Customer Care Team. Our working hours are Monday - Friday, 7.00 am to 7:30pm (AEST) and Saturday 8:30 am - 12:30 pm (AEST)"
+        },
+        {
+          "identifier": "contact_phone_title",
+          "type": "text",
+          "description": "Phone option title in Contact Us page",
+          "label": "Phone Title",
+          "value": "Call Us: 1300 734 318"
+        },
+        {
+          "identifier": "contact_phone_description",
+          "type": "text",
+          "description": "Phone option description in Contact Us page",
+          "label": "Phone Description",
+          "value": "Call our Customer Care Team. Our working hours are Monday - Friday, 7.00 am to 7:30pm (AEST) and Saturday 8:30 am - 12:30 pm (AEST)"
+        }
+      ]
+    },
+    {
+      "label": "Contact Us Forms + Mapping",
+      "variables": [
+        {
+          "identifier": "form_id_1",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #1 –––––––––––––",
+          "value": "360000042636"
+        },
+        {
+          "identifier": "form_icon_1",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_1",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": "Short description about form here"
+        },
+        {
+          "identifier": "form_id_2",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #2 –––––––––––––",
+          "value": "360000042676"
+        },
+        {
+          "identifier": "form_icon_2",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_2",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "identifier": "form_id_3",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #3 –––––––––––––",
+          "value": "360000043675"
+        },
+        {
+          "identifier": "form_icon_3",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_3",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": "Short description about form here"
+        },
+        {
+          "identifier": "form_id_4",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #4 –––––––––––––",
+          "value": "360000042696"
+        },
+        {
+          "identifier": "form_icon_4",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_4",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "identifier": "form_id_5",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #5 –––––––––––––",
+          "value": "360000042716"
+        },
+        {
+          "identifier": "form_icon_5",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_5",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "identifier": "form_id_6",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #6 –––––––––––––",
+          "value": "360000043695"
+        },
+        {
+          "identifier": "form_icon_6",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_6",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "identifier": "form_id_7",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #7 –––––––––––––",
+          "value": "360000042736"
+        },
+        {
+          "identifier": "form_icon_7",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_7",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "identifier": "form_id_8",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #8 –––––––––––––",
+          "value": "360005172476"
+        },
+        {
+          "identifier": "form_icon_8",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_8",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "identifier": "form_id_9",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #9 –––––––––––––",
+          "value": "360005445636"
+        },
+        {
+          "identifier": "form_icon_9",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_9",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "identifier": "form_id_10",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #10 –––––––––––––",
+          "value": "360007278315"
+        },
+        {
+          "identifier": "form_icon_10",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_10",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "identifier": "form_id_11",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #11 –––––––––––––",
+          "value": "360000043855"
+        },
+        {
+          "identifier": "form_icon_11",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_11",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": "Short description about form here"
+        },
+        {
+          "identifier": "form_id_12",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #12 –––––––––––––",
+          "value": "360000043875"
+        },
+        {
+          "identifier": "form_icon_12",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_12",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": "Short description about form here"
+        },
+        {
+          "identifier": "form_id_13",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #13 –––––––––––––",
+          "value": "4425473882383"
+        },
+        {
+          "identifier": "form_icon_13",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_13",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "identifier": "form_id_14",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #14 –––––––––––––",
+          "value": " "
+        },
+        {
+          "identifier": "form_icon_14",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_14",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": "Short description about form here"
+        },
+        {
+          "identifier": "form_id_15",
+          "type": "text",
+          "description": "Form ID",
+          "label": "––––––––––––– Form #15 –––––––––––––",
+          "value": " "
+        },
+        {
+          "identifier": "form_icon_15",
+          "type": "file",
+          "description": "Icon image",
+          "label": "Icon"
+        },
+        {
+          "identifier": "form_desc_15",
+          "type": "text",
+          "description": "Description about form",
+          "label": "Description",
+          "value": "Short description about form here"
+        },
+        {
+          "identifier": "category_form_mapping",
+          "type": "text",
+          "description": "JSON mapping of categoryid:formid",
+          "label": "Category to form mapping",
+          "value": "{\"360000123576\":360000042716,\"360000123696\":360000042696,\"360000679156\":360005445636,\"4406546465551\":360000042736,\"360000974535\":360007278315,\"360000125735\":360000042676}"
+        }
+      ]
+    },
+    {
+      "label": "Article Feedback Form",
+      "variables": [
+        {
+          "identifier": "feedback_form_id",
+          "type": "text",
+          "description": "Article Feedback Form ID",
+          "label": "Form ID",
+          "value": "360000036295"
+        },
+        {
+          "identifier": "feedback_field_id_title",
+          "type": "text",
+          "description": "Ticket Field ID for Article Title",
+          "label": "Article Title Field ID",
+          "value": "360000275736"
+        },
+        {
+          "identifier": "feedback_field_id_url",
+          "type": "text",
+          "description": "Ticket Field ID for Article Url",
+          "label": "Article Url Field ID",
+          "value": "360000267995"
+        },
+        {
+          "identifier": "feedback_field_id_reason",
+          "type": "text",
+          "description": "Ticket Field ID for Article Feedback Reason",
+          "label": "Feedback Reason Field ID",
+          "value": "360000268015"
+        },
+        {
+          "identifier": "feedback_option_label_1",
+          "type": "text",
+          "description": "Option Label",
+          "label": "––––––––––––– Option #1 –––––––––––––",
+          "value": "This article didn’t answer my question or solve my problem"
+        },
+        {
+          "identifier": "feedback_option_tag_1",
+          "type": "text",
+          "description": "Dropdown field tag for option",
+          "label": "Option Tag",
+          "value": "feedback_no_answer"
+        },
+        {
+          "identifier": "feedback_option_label_2",
+          "type": "text",
+          "description": "Option Label",
+          "label": "––––––––––––– Option #2 –––––––––––––",
+          "value": "I found this article confusing or difficult to read"
+        },
+        {
+          "identifier": "feedback_option_tag_2",
+          "type": "text",
+          "description": "Dropdown field tag for option",
+          "label": "Option Tag",
+          "value": "feedback_confusing_or_difficult"
+        },
+        {
+          "identifier": "feedback_option_label_3",
+          "type": "text",
+          "description": "Option Label",
+          "label": "––––––––––––– Option #3 –––––––––––––",
+          "value": "I don’t like the answer I received from this article"
+        },
+        {
+          "identifier": "feedback_option_tag_3",
+          "type": "text",
+          "description": "Dropdown field tag for option",
+          "label": "Option Tag",
+          "value": "feedback_unhappy_with_answer"
+        },
+        {
+          "identifier": "feedback_option_label_4",
+          "type": "text",
+          "description": "Option Label",
+          "label": "––––––––––––– Option #4 –––––––––––––",
+          "value": "Something else (please specify below)"
+        },
+        {
+          "identifier": "feedback_option_tag_4",
+          "type": "text",
+          "description": "Dropdown field tag for option",
+          "label": "Option Tag",
+          "value": "feedback_other"
+        }
+      ]
+    },
+    {
+      "label": "colors_group_label",
+      "variables": [
+        {
+          "identifier": "brand_color",
+          "type": "color",
+          "description": "brand_color_description",
+          "label": "brand_color_label",
+          "value": "#191870"
+        },
+        {
+          "identifier": "brand_text_color",
+          "type": "color",
+          "description": "brand_text_color_description",
+          "label": "brand_text_color_label",
+          "value": "#FFFFFF"
+        },
+        {
+          "identifier": "text_color",
+          "type": "color",
+          "description": "text_color_description",
+          "label": "text_color_label",
+          "value": "rgba(59, 67, 75, 1)"
+        },
+        {
+          "identifier": "heading_color",
+          "type": "color",
+          "description": "heading_color_description",
+          "label": "heading_color_label",
+          "value": "#191870"
+        },
+        {
+          "identifier": "link_color",
+          "type": "color",
+          "description": "link_color_description",
+          "label": "link_color_label",
+          "value": "#191870"
+        },
+        {
+          "identifier": "background_color",
+          "type": "color",
+          "description": "background_color_description",
+          "label": "background_color_label",
+          "value": "#FFFFFF"
+        }
+      ]
+    },
+    {
+      "label": "fonts_group_label",
+      "variables": [
+        {
+          "identifier": "heading_font",
+          "type": "list",
+          "description": "heading_font_description",
+          "label": "heading_font_label",
+          "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif",
+          "options": [
+            {
+              "label": "System",
+              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Arial",
+              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Arial Black",
+              "value": "'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Baskerville",
+              "value": "Baskerville, 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Century Gothic",
+              "value": "'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Copperplate Light",
+              "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
+            },
+            {
+              "label": "Courier New",
+              "value": "'Courier New', Courier, monospace"
+            },
+            {
+              "label": "Futura",
+              "value": "Futura, 'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Garamond",
+              "value": "Garamond, 'Hoefler Text', 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Geneva",
+              "value": "Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
+            },
+            {
+              "label": "Georgia",
+              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+            },
+            {
+              "label": "Helvetica",
+              "value": "Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Helvetica Neue",
+              "value": "'Helvetica Neue', Arial, Helvetica, sans-serif"
+            },
+            {
+              "label": "Impact",
+              "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+            },
+            {
+              "label": "Lucida Grande",
+              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+            },
+            {
+              "label": "Trebuchet MS",
+              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            }
+          ]
+        },
+        {
+          "identifier": "text_font",
+          "type": "list",
+          "description": "text_font_description",
+          "label": "text_font_label",
+          "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif",
+          "options": [
+            {
+              "label": "System",
+              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Arial",
+              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Arial Black",
+              "value": "'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Baskerville",
+              "value": "Baskerville, 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Century Gothic",
+              "value": "'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Copperplate Light",
+              "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
+            },
+            {
+              "label": "Courier New",
+              "value": "'Courier New', Courier, monospace"
+            },
+            {
+              "label": "Futura",
+              "value": "Futura, 'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Garamond",
+              "value": "Garamond, 'Hoefler Text', 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Geneva",
+              "value": "Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
+            },
+            {
+              "label": "Georgia",
+              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+            },
+            {
+              "label": "Helvetica",
+              "value": "Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Helvetica Neue",
+              "value": "'Helvetica Neue', Arial, Helvetica, sans-serif"
+            },
+            {
+              "label": "Impact",
+              "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+            },
+            {
+              "label": "Lucida Grande",
+              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+            },
+            {
+              "label": "Trebuchet MS",
+              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "brand_group_label",
+      "variables": [
+        {
+          "identifier": "logo",
+          "type": "file",
+          "description": "logo_description",
+          "label": "logo_label"
+        },
+        {
+          "identifier": "favicon",
+          "type": "file",
+          "description": "favicon_description",
+          "label": "favicon_label"
+        },
+        {
+          "identifier": "homepage_background_image",
+          "type": "file",
+          "description": "homepage_background_image_description",
+          "label": "homepage_background_image_label"
+        }
+      ]
+    },
+    {
+      "label": "search_group_label",
+      "variables": [
+        {
+          "identifier": "instant_search",
+          "type": "checkbox",
+          "description": "instant_search_description",
+          "label": "instant_search_label",
+          "value": true
+        },
+        {
+          "identifier": "scoped_kb_search",
+          "type": "checkbox",
+          "description": "scoped_knowledge_base_search_description",
+          "label": "scoped_knowledge_base_search_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "article_page_group_label",
+      "variables": [
+        {
+          "identifier": "show_recently_viewed_articles",
+          "type": "checkbox",
+          "description": "recently_viewed_articles_description",
+          "label": "recently_viewed_articles_label",
+          "value": true
+        },
+        {
+          "identifier": "show_related_articles",
+          "type": "checkbox",
+          "description": "related_articles_description",
+          "label": "related_articles_label",
+          "value": true
+        }
+      ]
+    }
+  ]
+}
